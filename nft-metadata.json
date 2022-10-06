@@ -1,0 +1,12 @@
+{
+    "attributes" : [
+        {
+            "color" : "Blue",
+            "value" : "Face"
+        }
+    ],
+
+    "description" : "This guy gonna change the world",
+    "image" : "https://gateway.pinata.cloud/ipfs/Qmdc5AFnJUafVL6TvNN3JDuTEKi9wtMzfwP8uAp2YaSSJo",
+    "name" : "face"
+}
