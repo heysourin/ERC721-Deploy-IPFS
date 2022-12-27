@@ -8,11 +8,11 @@ const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
 const web3 = createAlchemyWeb3(NODE_HTTP_URL);
 
 // import MyNFT from './MyNFT.json'
-const contract = require("./MyNFT.json");
+const contract = require("../artifacts/contracts/MyNFT.sol/MyNFT.json");
 
-console.log(JSON.stringify(contract.abi));
+// console.log(JSON.stringify(contract.abi));
 
-const contractAddress = "0xfED18D32F3b437469Ca0bC2C543611e1C13587Cd";
+const contractAddress = "0x0D685E8CE6145526FDB9151295B72dd0aad54860";
 
 //? Creating an instance using abi and deployed address
 const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
@@ -54,8 +54,6 @@ async function mintNFT(tokenURI) {
     });
 }
 
-mintNFT(
-    "https://gateway.pinata.cloud/ipfs/QmQCCCfgg2aXgTpAUYoTnoeR5fR2oM4HMXMWu1JDamD92b"
-  );
+mintNFT("https://gateway.pinata.cloud/ipfs/QmVLR3nzjgMK7PREqFdnko5z4TEjxrJrY6GYSni9JCyxaD");
 
-  //0xc5ab9a1ffb520dde4d7e3574c7e791591af88fbd5079912d93d52a778b93bed4
+//0xc5ab9a1ffb520dde4d7e3574c7e791591af88fbd5079912d93d52a778b93bed4

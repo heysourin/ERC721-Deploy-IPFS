@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: SEE LICENSE IN LICENSE
-pragma solidity ^0.8.8;
+pragma solidity ^0.8.17;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
@@ -11,13 +11,13 @@ contract MyNFT is ERC721URIStorage, Ownable{
 
     Counters.Counter private _tokenIds; //? It will keep count on tokenId
 
-    constructor() ERC721("XENON", "XNN"){
+    constructor() ERC721("XENON2", "XNN2"){
 
     }
 
-    function mintNFT(address recipient, string memory tokenURI) public onlyOwner returns(uint){
+    function mintNFT(address recipient, string memory tokenURI) public onlyOwner returns(uint256){
         _tokenIds.increment();
-        uint newItemId = _tokenIds.current();
+        uint256 newItemId = _tokenIds.current();
         _mint(recipient, newItemId);
         _setTokenURI(newItemId, tokenURI);
 

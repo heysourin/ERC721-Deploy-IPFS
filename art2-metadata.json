@@ -1,0 +1,12 @@
+{
+    "attributes" : [
+        {
+            "color" : "Blue",
+            "value" : "Face"
+        }
+    ],
+
+    "description" : "Blue-Tech",
+    "image" : "https://gateway.pinata.cloud/ipfs/QmNyMhzWph69UbKixUxTSUSJt31h7nkdwFTbMYAcPxcNDx",
+    "name" : "tech"
+}

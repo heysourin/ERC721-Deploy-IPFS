@@ -7,7 +7,7 @@ async function main() {
   await mynft.deployed();
 
   console.log(
-    `Contract deployed at ${mynft.address}`
+    `Contract deployed to: ${mynft.address}`
   );
 }
 
